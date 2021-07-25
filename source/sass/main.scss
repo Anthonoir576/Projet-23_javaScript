@@ -14,5 +14,111 @@ body {
 
     overflow-x: hidden;
     font-family: 'Josefin Sans', 'Lato', sans-serif;
+    background: rgba(51, 51, 51, 0.226);
+    width: 100vw;
+    height: 100vh;
     
-} 
+}
+
+img {
+
+    border-radius: 10px;
+}
+
+h1 {
+
+    text-align: center;
+    margin-top: 1rem;
+
+}
+
+.container {
+
+    margin: 50px auto;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 60%;
+    background: whitesmoke;
+    
+    position: relative;
+
+    .slider {
+
+        & img {
+
+            margin: 0 auto;
+            max-width: 100%;
+            display: none;
+    
+        }
+
+    }
+
+    img.active {
+
+        display: block;
+        animation: fade 0.8s;
+
+    }
+
+    @keyframes fade {
+
+        from {
+
+          opacity: 0;
+
+        }
+
+        to {
+
+          opacity: 1;
+
+        }
+
+    }
+
+    & .cont-btn {
+
+        display: flex;
+        justify-content: space-between;
+
+        & img {
+        
+            width: 50px;
+            height: auto;
+            border: 1px solid #000;
+            border-radius: 60%;
+            padding: 10px;
+            
+        }
+
+    }
+
+    .btn-nav {
+
+        & img {
+
+            cursor: pointer;
+    
+        }
+
+    }
+
+    .left img {
+
+        position: absolute;
+        top: 45%;
+        left: -100px;
+
+    }
+
+    
+    .right img {
+
+        position: absolute;
+        top: 45%;
+        right: -100px;
+
+    }
+
+}
