@@ -14,7 +14,7 @@ body {
 
     overflow-x: hidden;
     font-family: 'Josefin Sans', 'Lato', sans-serif;
-    background: rgba(51, 51, 51, 0.226);
+    background: #f2f2f2;
     width: 100vw;
     height: 100vh;
     
@@ -35,10 +35,10 @@ h1 {
 .container {
 
     margin: 50px auto;
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: 10px;
     width: 60%;
-    background: whitesmoke;
+    box-shadow: -1px 3px 15px -1px #000000;
     
     position: relative;
 
@@ -99,6 +99,13 @@ h1 {
         & img {
 
             cursor: pointer;
+
+            &:hover {
+
+                transition: .3s;
+                transform: scale(1.1);
+
+            }
     
         }
 
